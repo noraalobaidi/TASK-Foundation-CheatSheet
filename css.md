@@ -21,6 +21,11 @@ In CSS, there are 3 types of **SELECTORS**
 ```css
 _______________ {
   /* This will change the styling for every h1 tag in the linked html file */
+  h1{
+    /* and we can specify the the styling for example */
+  color: white;
+  text-align: center;
+  }
 }
 ```
 
@@ -35,6 +40,11 @@ _______________ {
     
     <div class="container"> ... </div>
     */
+    .container{
+      /* and we can specify the the styling for example */
+  color: white;
+  text-align: center;
+    }
 }
 ```
 
@@ -49,6 +59,11 @@ _______________ {
     
     <div id="box1"> ... </div>
     */
+    #box1 {
+      /* and we can specify the the styling for example */
+  color: white;
+  text-align: center;
+    }
 }
 ```
 
@@ -65,36 +80,37 @@ In CSS, we use the Kebab case (separate each word with a dash `-`)
 
 ```css
 /*To change the background color*/
-___: ___;
+ 
+background-color:rgb(190, 122, 236);
 
 /*To change the font color*/
-___: ___;
+color:white;
 
 /*To change the border color*/
-___: ___;
+border-color:green;
 ```
 
 ### Box Model
 
 ```css
 /*To add padding  */
-___: ___;
+padding:50px;
 
 /*To add margin */
-___: ___;
+margin-right: 50px;
 
 /*To add border */
-___: ___;
+border: 5px solid red;
 ```
 
 ### Font
 
 ```css
 /*To change the font size */
-___: ___;
+font-size:small;
 
 /*To change the font family  */
-___: ___;
+font-family: "Courgette", cursive;
 
 /*To change the font width */
 ___: ___;
@@ -104,18 +120,18 @@ ___: ___;
 
 **Units**
 There are multiple units in CSS to size things
-`____`: a CSS unit that represents number of pixels
-`____`: a CSS unit that represents the percentage relatively to the container
+`px`: a CSS unit that represents number of pixels
+`%`: a CSS unit that represents the percentage relatively to the container
 `____`: a CSS unit which is relative to the font size of the parent element
 `____`: a CSS unit which is relative to the font size of the html element
-`____`: a CSS unit that represents the view height. We use it usually for background size and set it to 100 to get the size of the whole screen vertically.
+`vh`: a CSS unit that represents the view height. We use it usually for background size and set it to 100 to get the size of the whole screen vertically.
 
 ```css
 /*To change width */
-___: ___;
+width :200px;
 
 /*To change height  */
-___: ___;
+height :200px;
 ```
 
 ### Position
@@ -124,7 +140,7 @@ ___: ___;
 /*
 To make everything inside a container relative to it. we use: position: ___
 */
-position: ________;
+position:relative;
 
 /*To make any item in the container doesn't care about the container content, and it doesn't mind being on top of the over elements we use position: ____
 This is perfect to put things stacking on top of each other
@@ -135,10 +151,10 @@ Making the position ____ allows you to use the following properties
 - right: 
 - z-index: 
 */
-position: _________;
+position: fixed;
 
 /*When position is (absolute), you can put things stacking on each other, but you can specify which element should be on visible on the top of another element, we use ___ and add a higher number to it */
-______: 1000;
+z-index: 1000;
 ```
 
 ### Display
@@ -164,14 +180,14 @@ display: _____;
 display: flex;
 
 /*To change the main axis to row or column you use  */
-______: row;
-______: column;
+flex-direction: row;
+flex-direction: column;
 
 /*To make things center in the (MAIN AXIS) you use  */
-______: center;
+justify-content: center;
 
 /*To make things center in the (CROSS AXIS) you use  */
-______: center;
+align-items: center;
 ```
 
 ## common flex usages

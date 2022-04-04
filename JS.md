@@ -2,9 +2,9 @@
 
 ## Main brackets
 
-- `{ }`: is mainly used for `________`
+- `{ }`: is mainly used for `objects `
 - `( )`: is mainly used for `________`
-- `[ ]`: is mainly used for `________`
+- `[ ]`: is mainly used for `arrays`
 
 ## Javascript Basics
 
@@ -24,25 +24,25 @@ comment */
 
 **Variables and constants**
 variables -> `let`
-`___`: for variables
-`___`: for constants
+`var`: for variables
+`const`: for constants
 
 ```js
-// to create a new variable
-________;
+// to create a new variablel
+let x=5; //or var x=5;
 // to create a new constant
-________;
+const x=5;
 ```
 
 **Main Types:**
 
 ```js
 // Number:
-let a = _____;
+let a = 3;
 // String:
-let b = _____;
+let b = "Hello";
 // Boolean:
-let c = _____;
+let c = true;
 ```
 
 **Print**
@@ -50,19 +50,19 @@ To print out on the console
 
 ```js
 // 1. printing string
-______.log(_____Hello World_____); // -> Hello World
+console.log("Hello World"); // -> Hello World
 
 // 2. printing values inside stored variables or constant
 const pi = 3.14;
-______.log(pi); // 3.14
+console.log(pi); // 3.14
 
 // 3. printing more than one element,
 const x = 5;
 const y = 10;
-______.log(____________________); // 5 Hello World 10
+console.log(`${x} Hello World ${y}`); // 5 Hello World 10
 
 // 4. console.log adds one line after it finishes
-______.log(); // will just print an empty new line
+console.log("\n"); // will just print an empty new line
 ```
 
 ### Basics

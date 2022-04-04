@@ -11,7 +11,7 @@ HTML is a markup language. Everything you write in html should be wrapped in **T
 ## Attributes
 
 Every tag can have **ATTRIBUTES**. Attributes are added to the the **opening tag only**.
-Every attribute added would have a name, then `___` sign then the value of the attribute between quotations.
+Every attribute added would have a name, then `=` sign then the value of the attribute between quotations.
 
 ```html
 <TAG ATTRIBUTE="VALUE"> CONTENT </TAG>
@@ -20,22 +20,23 @@ Every attribute added would have a name, then `___` sign then the value of the a
 For example, the **style** attribute can be added to the following tag as follows
 
 ```html
-<TAG ____="background-color: red;"> CONTENT </TAG>
+<TAG style="background-color: red;"> CONTENT </TAG>
 ```
 
 ## HTML structure
 
 HTML has 2 main tags
 
-1. `<___>` is a tag that we add meta data to it, like linking the CSS, or adding a title for a website. Anything inside this tag, shall not be rendered in the web page directly
-2. `<___>` is a tag that we add the content of the html page that will be rendered directly to the web page
+1. `<head>` is a tag that we add meta data to it, like linking the CSS, or adding a title for a website. Anything inside this tag, shall not be rendered in the web page directly
+2. `<body>` is a tag that we add the content of the html page that will be rendered directly to the web page
 
 ## Comments 💬
 
 HTML comments are just comments and notes for the developers to understand the code structure, or sometimes intentionally hide some html block to not be rendered on the page.
 
 ```html
-<____> MY COMMENTS HERE <____>
+<<!--> MY COMMENTS HERE <-->>
+  <!--comment-->
 ```
 
 ## Headings 📰
@@ -43,12 +44,12 @@ HTML comments are just comments and notes for the developers to understand the c
 Headings are big titles. There are 6 sized of headings.
 
 ```html
-  <___> This is heading 1</___>
-  <___> This is heading 2</___>
-  <___> This is heading 3</___>
-  <___> This is heading 4</___>
-  <___> This is heading 5</___>
-  <___> This is heading 6</___>
+  <h1> This is heading 1</h1>
+  <h2> This is heading 2</h2>
+  <h3> This is heading 3</h3>
+  <h4> This is heading 4</h4>
+  <h5> This is heading 5</h5>
+  <h6> This is heading 6</h6>
 ```
 
 ## Paragraphs ❡
@@ -57,42 +58,42 @@ Paragraph creates a new line for a text body.
 The following paragraphs will be rendered in two separate
 
 ```html
-<___> This is a paragraph</___>
-<___> This is another paragraph</___>
+<p> This is a paragraph</p>
+<p> This is another paragraph</p>
 ```
 
 ## Images 🌁
 
-Images are self closing tags. They need 1 main attribute `___`, which needs the image link.
+Images are self closing tags. They need 1 main attribute `src`, which needs the image link.
 
 ```html
-<___ ___="IMAGE_LINK"/>
+<img src="IMAGE_LINK"/>
 ```
 
 Note that the image link should be wrapped with quotation marks `" "`
 
-Another attribute that the image takes is `___` which is an alternative text that would appear if the image link was broken, or couldn't be loaded. Also it's useful for screen readers to describe the image.
+Another attribute that the image takes is `alt` which is an alternative text that would appear if the image link was broken, or couldn't be loaded. Also it's useful for screen readers to describe the image.
 
 ```html
-<___ ___="IMAGE_LINK" ___="ALTERNATIVE_TEXT"/>
+<img src="IMAGE_LINK" alt="ALTERNATIVE_TEXT"/>
 ```
 
 ## Links - Anchor tag ⚓️
 
-Anchor tag `<_>` is a **non-self closing tag**. The inner html of the anchor tag is the text that will be tapped to take you to a specific link. It takes one required attributes `___` that should take the link of the destination of the link.
+Anchor tag `<a>` is a **non-self closing tag**. The inner html of the anchor tag is the text that will be tapped to take you to a specific link. It takes one required attributes `href` that should take the link of the destination of the link.
 
 ```html
-<_ ____="https://google.com"> CLICK ME </_>
+<a href="https://google.com"> CLICK ME </a>
 ```
 
-You can specify if you want to open the tag within the same window or different window or different tab using the attribute `______`
+You can specify if you want to open the tag within the same window or different window or different tab using the attribute `target`
 
 ```html
 <!-- OPEN IN A NEW TAB -->
-<a ______="_____" href="https://google.com"> CLICK ME </a>
+<a target="_blank" href="https://google.com"> CLICK ME </a>
 
 <!-- OPEN IN A NEW WINDOW -->
-<a ______="_____" href="https://google.com"> CLICK ME </a>
+<a target="_blank" href="https://google.com"> CLICK ME </a>
 ```
 
 ## Lists ❥
@@ -108,11 +109,11 @@ There are two types of lists. **ordered list**, and **unordered list**. For both
 ```
 
 ```html
-<__>
-   <__> list item one </__>
-   <__> list item two </__>
-   <__> list item three </__>
-</__>
+<ol>
+   <li> list item one </li>
+   <li> list item two </li>
+   <li> list item three </li>
+</ol>
 ```
 
 ### Unordered list
@@ -124,11 +125,11 @@ There are two types of lists. **ordered list**, and **unordered list**. For both
 ```
 
 ```html
-<__>
-  <__> point </__>
-  <__> point </__>
-  <__> point </__>
-</__>
+<ul>
+  <li> point </li>
+  <li> point </li>
+  <li> point </li>
+</ul>
 ```
 
 To change the ordered list type to show the list with alphabetical order or romanian as follows
@@ -143,17 +144,17 @@ C. Point 3
 III. Point 3
 ```
 
-We use the attribute `____`
+We use the attribute `type`
 
 ```html
 <!-- Alphabetical -->
-<ol ____>
+<ol type="A">
   <li>Point 1</li>
   <li>Point 2</li>
   <li>Point 3</li>
 </ol>
 <!-- Romanian -->
-<ol ____>
+<ol type="i">
   <li>Point 1</li>
   <li>Point 2</li>
   <li>Point 3</li>
@@ -168,7 +169,7 @@ We use the attribute `____`
 
 ```html
   <head>
-    <___> I am title </___>
+    <title> I am title </title>
   </head>
 ```
 
@@ -176,6 +177,6 @@ We use the attribute `____`
 
 ```html
 <head>
-  <___________ />
+  <link rel="stylesheet" href="style.css"/>
 </head>
 ```
