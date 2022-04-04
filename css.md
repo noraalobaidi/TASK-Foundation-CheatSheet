@@ -19,20 +19,20 @@ In CSS, there are 3 types of **SELECTORS**
 ### Tags
 
 ```css
-_______________ {
+h1 {
   /* This will change the styling for every h1 tag in the linked html file */
-  h1{
+  
     /* and we can specify the the styling for example */
   color: white;
   text-align: center;
-  }
+  
 }
 ```
 
 ### Classes
 
 ```css
-_______________ {
+.container {
   /* This will change the styling for every tag 
     in the linked html file that implemented 
     the class container. 
@@ -40,18 +40,18 @@ _______________ {
     
     <div class="container"> ... </div>
     */
-    .container{
+    
       /* and we can specify the the styling for example */
   color: white;
   text-align: center;
-    }
+    
 }
 ```
 
 ### Ids
 
 ```css
-_______________ {
+#box1 {
   /* This will change the styling for every tag 
     in the linked html file that implemented 
     the id box1. 
@@ -59,11 +59,10 @@ _______________ {
     
     <div id="box1"> ... </div>
     */
-    #box1 {
       /* and we can specify the the styling for example */
   color: white;
   text-align: center;
-    }
+    
 }
 ```
 
