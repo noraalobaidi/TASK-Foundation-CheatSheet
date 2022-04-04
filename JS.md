@@ -3,7 +3,7 @@
 ## Main brackets
 
 - `{ }`: is mainly used for `objects `
-- `( )`: is mainly used for `________`
+- `( )`: is mainly used for `functions (conditions , loops)`
 - `[ ]`: is mainly used for `arrays`
 
 ## Javascript Basics
@@ -335,7 +335,7 @@ ___________;
 
 ### Iteration Methods
 
-- Iteration methods work on **\*\***\_\_\_\_**\*\*** only!
+- Iteration methods work on **\*\***\_\_\_\_**arrays** only!
 - All iteration methods go over evrey single element of the array
 - Iteration methods take a function that has a parameter of the current value of the array. Preferred to use arrow function inside it.
 

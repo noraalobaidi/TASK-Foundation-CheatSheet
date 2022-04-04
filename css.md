@@ -160,16 +160,16 @@ z-index: 1000;
 
 ```css
 /*To make an element take a whole block (a whole row) we use */
-display: ___;
+display:block;
 
 /*To make an element takes only the size that it needs, without taking a whole row  */
-display: ___;
+display: inline;
 
 /*To enable a container to be horizontal we use  */
 display: ___;
 
 /*To hide an element  */
-display: _____;
+display: none;
 ```
 
 ### Flex
