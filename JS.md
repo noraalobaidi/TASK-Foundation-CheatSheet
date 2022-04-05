@@ -360,7 +360,7 @@ const array = [10, 20, 30, 40, 50, 60];
 array.map((e) => e / 10); // returns a transformed array equals to [1,2,3,4,5]
 array.filter((e) => e <= 30); // returns a filtered array equals to [10, 20, 30]
 array.find((e) => e === 20); // returns 20
-array.___((e) => e === 20); // returns true //array.includes(20); will return true
+array.includes((e) => e === 20); // returns true //array.includes(20); will return true
 array.reduce((prev, current) => prev + current); // returns the sum of the array (210)
 ```
 

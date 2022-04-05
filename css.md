@@ -112,7 +112,7 @@ font-size:small;
 font-family: "Courgette", cursive;
 
 /*To change the font width */
-___: ___;
+width: 10%;
 ```
 
 ### Sizes
@@ -121,8 +121,8 @@ ___: ___;
 There are multiple units in CSS to size things
 `px`: a CSS unit that represents number of pixels
 `%`: a CSS unit that represents the percentage relatively to the container
-`____`: a CSS unit which is relative to the font size of the parent element
-`____`: a CSS unit which is relative to the font size of the html element
+`em`: a CSS unit which is relative to the font size of the parent element
+`rem`: a CSS unit which is relative to the font size of the html element
 `vh`: a CSS unit that represents the view height. We use it usually for background size and set it to 100 to get the size of the whole screen vertically.
 
 ```css
@@ -166,7 +166,7 @@ display:block;
 display: inline;
 
 /*To enable a container to be horizontal we use  */
-display: ___;
+display: inline;
 
 /*To hide an element  */
 display: none;
